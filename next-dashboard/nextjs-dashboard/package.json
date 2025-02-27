@@ -1,5 +1,12 @@
 {
+  "name": "nextjs-dashboard",
+  "version": "1.0.0",
   "private": true,
+  "description": "This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "postcss.config.js",
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
@@ -27,5 +34,14 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "bcrypt",
+      "sharp"
+    ],
+    "onlyBuiltDependencies": [
+      "bcrypt"
+    ]
   }
 }
